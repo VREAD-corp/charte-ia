@@ -1,0 +1,10 @@
+{
+  "name": "charte-ia",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "pdf": "node build.mjs && node tools/make-pdf.mjs && node build.mjs",
+    "test": "node build.mjs && node tests/site.check.mjs && node tests/gas.test.mjs && node tests/cro.check.mjs src/assets/cro.js"
+  }
+}
