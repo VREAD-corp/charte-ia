@@ -1,9 +1,11 @@
 // Site configuration read by build.mjs.
-const ORG = { '@type': 'Organization', name: 'READ FRANCE SAS', url: 'https://outils.vread.fr/', email: 'octave@vread.fr' };
+const ORG = { '@type': 'Organization', '@id': 'https://jalonel.com/#org', name: 'Jalonel', url: 'https://jalonel.com/', parentOrganization: { '@type': 'Organization', name: 'READ FRANCE SAS', identifier: 'SIREN 988741773' } };
 
 export default {
   repo: 'charte-ia',
   site: 'charte-ia',
+  origin: 'https://charte-ia.jalonel.com',
+  indexNowKeys: ['5be19f56d46ca3d2553bee28ebfa8edd'],
   brand: 'Lu & Compris',
   logo: 'Lu <span>&amp;</span> Compris',
   accent: '#0f5f4a',

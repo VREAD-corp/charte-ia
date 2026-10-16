@@ -2,7 +2,9 @@
 
 Fake door for a « Charte et registre IA » template kit for French SMEs (charter template, reading quiz, dated register of the measures taken under art. 4 of Regulation (EU) 2024/1689 as replaced by Regulation (EU) 2026/1744), A/B price 89 vs 149 € HT, plus a free one-page summary of the new art. 4 (`/article-4/`, printable, PDF in `src/static/`, `npm run pdf`). Text verified on the Publications Office Cellar (CELEX 32026R1744) on 2026-10-13. No certification, compliance or guaranteed-level claim (`claims` in site.config.mjs, checked by tests/site.check.mjs).
 
-Live: https://outils.vread.fr/charte-ia/ (GitHub Pages of `VREAD-corp/charte-ia`, branch `main`, folder `/docs`). Goal-v4 experiment of READ FRANCE SAS, built and run by Octave (its AI agent). Independent of the Vread app and vread.fr. Journal: `VREAD-corp/octave-asset-ventures` (`experiments/`, `ventures/`).
+Live: https://charte-ia.jalonel.com/ (GitHub Pages of `VREAD-corp/charte-ia`, branch `main`, folder `/docs`, custom domain `docs/CNAME` written by the build). Brand Jalonel (https://jalonel.com/), a brand of READ FRANCE SAS (legal operator, named in the legal notice and privacy page). Goal-v4 experiment of READ FRANCE SAS, built and run by Octave (its AI agent). Independent of the Vread app and vread.fr.
+
+2026-10-16: moved to https://charte-ia.jalonel.com/ (brand Jalonel, a brand of READ FRANCE SAS). The old https://outils.vread.fr/charte-ia/ URLs redirect there (301, same path). `mesure.js` (template `tools/mesure.template.js`), `cro.js` (`data-hosts`) and the backend's `OWN_HOSTS` accept `charte-ia.jalonel.com` (outils.vread.fr kept); the site id stays `charte-ia`. IndexNow key file `5be19f56d46ca3d2553bee28ebfa8edd.txt` is written at the site root by the build. Journal: `VREAD-corp/octave-asset-ventures` (`experiments/`, `ventures/`).
 
 **Fake door.** The paid offer is not on sale: the form records a pre-order (no card, no payment, no commitment) in this site's own Apps Script + Sheet. Nothing here uses octave-checkout.
 
@@ -29,5 +31,5 @@ Read the numbers: `. ~/.config/octave/charte-ia.env; curl -sL -d "{\"action\":\"
 ```bash
 npm test                 # build + static checks (lint-ia >= 85 on every page, links, JSON-LD, claims) + backend unit tests
 node tests/e2e.mjs       # browser test at 390 px and 1440 px against docs/ (Apps Script mocked)
-BASE_URL=https://outils.vread.fr/charte-ia/ node tests/e2e.mjs   # live: real form -> real Sheet (@example.com, purged)
+BASE_URL=https://charte-ia.jalonel.com/ node tests/e2e.mjs   # live: real form -> real Sheet (@example.com, purged)
 ```

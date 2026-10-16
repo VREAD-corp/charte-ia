@@ -2,6 +2,7 @@
 var APP = {
   name: 'Lu & Compris',
   site: 'charte-ia',
+  host: 'charte-ia.jalonel.com',               // public site (brand Jalonel); outils.vread.fr/<site>/ redirects here
   tz: 'Europe/Paris',
   sheetTitle: 'Lu & Compris : pré-commandes et statistiques (READ FRANCE SAS)',
   consentVersion: 'pc-2026-10-13',
