@@ -2,6 +2,8 @@
 const ORG = { '@type': 'Organization', '@id': 'https://jalonel.com/#org', name: 'Jalonel', url: 'https://jalonel.com/', parentOrganization: { '@type': 'Organization', name: 'READ FRANCE SAS', identifier: 'SIREN 988741773' } };
 
 export default {
+  // En pause depuis le 24/10/2026 (décision des fondateurs, recentrage Jalonel): noindex, banner, pre-order form closed.
+  paused: true,
   repo: 'charte-ia',
   site: 'charte-ia',
   origin: 'https://charte-ia.jalonel.com',

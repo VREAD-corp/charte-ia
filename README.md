@@ -1,5 +1,8 @@
 # Lu & Compris
 
+**En pause depuis le 24/10/2026** (décision des fondateurs, recentrage Jalonel) : noindex, bandeau, demandes fermées ; tracking conservé.
+
+
 Fake door for a « Charte et registre IA » template kit for French SMEs (charter template, reading quiz, dated register of the measures taken under art. 4 of Regulation (EU) 2024/1689 as replaced by Regulation (EU) 2026/1744), A/B price 89 vs 149 € HT, plus a free one-page summary of the new art. 4 (`/article-4/`, printable, PDF in `src/static/`, `npm run pdf`). Text verified on the Publications Office Cellar (CELEX 32026R1744) on 2026-10-13. No certification, compliance or guaranteed-level claim (`claims` in site.config.mjs, checked by tests/site.check.mjs).
 
 Live: https://charte-ia.jalonel.com/ (GitHub Pages of `VREAD-corp/charte-ia`, branch `main`, folder `/docs`, custom domain `docs/CNAME` written by the build). Brand Jalonel (https://jalonel.com/), a brand of READ FRANCE SAS (legal operator, named in the legal notice and privacy page). Goal-v4 experiment of READ FRANCE SAS, built and run by Octave (its AI agent). Independent of the Vread app and vread.fr.
